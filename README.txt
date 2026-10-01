@@ -1,12 +1,10 @@
-# Alya Letter Microsite
+#Letter Microsite
 
 ## Files
 - index.html
 - style.css
 - script.js
-- music.mp3  <-- add your own instrumental track here
+- music.mp3 
 
-## Run locally
-Open `index.html` in a browser.
 
 
