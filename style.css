@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f6f3ed;
+  color: #24221f;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.85;
+}
+
+main {
+  overflow: hidden;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: min(760px, 88%);
+  margin: auto;
+  padding: 80px 0;
+}
+
+.eyebrow,
+.chapter-number {
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  font-size: .72rem;
+  color: #77716a;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: clamp(3rem, 8vw, 6rem);
+  max-width: 760px;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 3.3rem);
+  margin: 12px 0 40px;
+}
+
+.intro {
+  color: #77716a;
+  font-size: 1.05rem;
+  margin-bottom: 45px;
+}
+
+.begin-button {
+  width: fit-content;
+  border: 1px solid #aaa39b;
+  background: transparent;
+  padding: 13px 20px;
+  font: inherit;
+  cursor: pointer;
+  transition: .25s ease;
+}
+
+.begin-button:hover {
+  background: #24221f;
+  color: #f6f3ed;
+}
+
+.sound-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  border: 1px solid #aaa39b;
+  background: rgba(246, 243, 237, .85);
+  backdrop-filter: blur(8px);
+  padding: 9px 13px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.letter {
+  width: min(680px, 86%);
+  margin: auto;
+}
+
+.chapter {
+  min-height: 85vh;
+  padding: 120px 0;
+  border-top: 1px solid #d8d2c9;
+}
+
+.chapter p {
+  font-size: 1.06rem;
+}
+
+.emphasis {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 1.55rem !important;
+  line-height: 1.5;
+  margin: 45px 0;
+}
+
+.signature {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 1.4rem !important;
+  margin-top: 55px;
+}
+
+.final-chapter {
+  padding-bottom: 180px;
+}
+
+footer {
+  width: min(680px, 86%);
+  margin: auto;
+  padding: 50px 0 90px;
+  border-top: 1px solid #d8d2c9;
+  color: #888078;
+  font-size: .8rem;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 92vh;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  .chapter {
+    min-height: auto;
+    padding: 90px 0;
+  }
+
+  .sound-toggle span {
+    display: none;
+  }
+}
